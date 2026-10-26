@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon TP HTML - Page 1</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; background: #f1f5f9; color: #1e293b; line-height: 1.6; }
+header { background: #1e3a8a; color: white; text-align: center; padding: 25px 10px 0; }
+header h1 { margin: 0 0 15px; }
+nav a { display: inline-block; color: white; text-decoration: none; padding: 10px 22px; }
+nav a:hover { background: #2563eb; }
+main { max-width: 850px; margin: 25px auto; padding: 0 15px; }
+section { background: white; padding: 22px; margin-bottom: 22px; border-radius: 10px; border-top: 4px solid #2563eb; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+h2 { color: #1e3a8a; margin-top: 0; }
+h3 { color: #2563eb; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #cbd5e1; padding: 10px; text-align: center; }
+th { background: #1e3a8a; color: white; }
+tr:nth-child(even) td { background: #eff6ff; }
+label { font-weight: bold; }
+input[type=text], input[type=email], input[type=password], select, textarea { width: 100%; max-width: 380px; padding: 8px; margin: 4px 0 12px; border: 1px solid #94a3b8; border-radius: 5px; font-size: 1rem; }
+input[type=radio], input[type=checkbox] { margin-left: 10px; }
+input[type=submit], input[type=reset] { padding: 10px 22px; border: none; border-radius: 5px; color: white; font-size: 1rem; cursor: pointer; margin-top: 8px; }
+input[type=submit] { background: #2563eb; }
+input[type=reset] { background: #64748b; }
+a { color: #2563eb; }
+footer { background: #1e3a8a; color: white; text-align: center; padding: 15px; }
+@media (max-width: 600px) { nav a { padding: 8px 12px; } }
+</style>
+</head>
+<body>
+
+<!-- en-tête et menu -->
+<header>
+<h1>Mon TP HTML</h1>
+<nav>
+<a href="index.html">Page 1</a>
+<a href="page2.html">Page 2</a>
+</nav>
+</header>
+
+<main>
+<!-- image 1 -->
+<section>
+<h2>Apprendre le HTML</h2>
+<img src="images/ordinateur.svg" alt="Dessin d'un ordinateur avec du code HTML" width="320">
+<p>Dans ce TP, je crée un petit site web avec du HTML.</p>
+<p>Pour voir la deuxième page, cliquez sur <a href="page2.html">Page 2</a>.</p>
+</section>
+
+<!-- tableau -->
+<section>
+<h2>Tableau des étudiants</h2>
+<table>
+<tr><th>Nom</th><th>Âge</th><th>Classe</th><th>Note</th></tr>
+<tr><td>Sami</td><td>20</td><td>2 SI</td><td>14</td></tr>
+<tr><td>Amira</td><td>19</td><td>1 SI</td><td>16</td></tr>
+<tr><td>Youssef</td><td>21</td><td>3 SI</td><td>12</td></tr>
+<tr><td>Lina</td><td>20</td><td>2 SI</td><td>15</td></tr>
+</table>
+</section>
+
+<!-- formulaire -->
+<section>
+<h2>Formulaire d'inscription</h2>
+<form>
+<label for="nom">Nom :</label><br>
+<input type="text" id="nom" name="nom"><br>
+
+<label for="email">Email :</label><br>
+<input type="email" id="email" name="email"><br>
+
+<label for="mdp">Mot de passe :</label><br>
+<input type="password" id="mdp" name="mdp"><br>
+
+<p>Sexe :
+<input type="radio" id="h" name="sexe" value="homme"><label for="h">Homme</label>
+<input type="radio" id="f" name="sexe" value="femme"><label for="f">Femme</label>
+</p>
+
+<p>Loisirs :
+<input type="checkbox" id="sport" name="loisir" value="sport"><label for="sport">Sport</label>
+<input type="checkbox" id="musique" name="loisir" value="musique"><label for="musique">Musique</label>
+<input type="checkbox" id="lecture" name="loisir" value="lecture"><label for="lecture">Lecture</label>
+</p>
+
+<label for="classe">Classe :</label><br>
+<select id="classe" name="classe">
+<option>1 SI</option>
+<option>2 SI</option>
+<option>3 SI</option>
+</select><br>
+
+<label for="message">Message :</label><br>
+<textarea id="message" name="message" rows="4"></textarea><br>
+
+<input type="submit" value="Envoyer">
+<input type="reset" value="Effacer">
+</form>
+</section>
+
+</main>
+
+<!-- pied de page -->
+<footer>
+<p>TP HTML - Réalisé par Ali Bouzayen</p>
+</footer>
+
+</body>
+</html>
